@@ -10,6 +10,7 @@
   </head>
     <header class="row">
       <div class="col-3">
+       <%= link_to root_path , class: 'logo' do %>    
         <div class="circle">
           <br />
           you know
@@ -18,12 +19,13 @@
           <br />
           to code
         </div>
+      <% end %>
       </div>
       <div class="col-4 slogan">
         splurting out unsolicited advice about entreprenuership since 2016
       </div>
       <div class="col-5 links"> 
-        <%= link_to 'contribute' , "#" %>
+        <%= link_to 'contribute' , new_quote_path %>
         <%= link_to 'about' , '#' %>
     </header>
 
@@ -41,7 +43,7 @@
       <div class="container">
         <div class="row">
         <div class="col-6">
-          <%= link_to "this isn't enough, i need more" , "#" , class: "next-quote" %>
+          <%= link_to "this isn't enough, i need more" , root_path, class: "next-quote" %>
       </div>
       <div class="col-6 footer-blurb">
         Proudly built by <a href="[aboutandrewc.netlify.com]">[Andrew Wilmore]</a><br />
