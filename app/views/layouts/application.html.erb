@@ -22,8 +22,7 @@
       <div class="col-4 slogan">
         splurting out unsolicited advice about entreprenuership since 2016
       </div>
-      <div class="col-5 links">
-      <div class="col-5">
+      <div class="col-5 links"> 
         <%= link_to 'contribute' , "#" %>
         <%= link_to 'about' , '#' %>
     </header>
@@ -33,6 +32,24 @@
     <br class="clear" />
 
   <body>
+
+  <div class="container"
+
     <%= yield %>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+        <div class="col-6">
+          <%= link_to "this isn't enough, i need more" , "#" , class: "next-quote" %>
+      </div>
+      <div class="col-6 footer-blurb">
+        Proudly built by <a href="[aboutandrewc.netlify.com]">[Andrew Wilmore]</a><br />
+        Want to build your own Splurty Web App - <a href="https://online.bootcampspot.com">Learn how to code here</a>
+         </div>
+       </div>
+      </div>
+    </div>
+
   </body>
 </html>
